@@ -45,3 +45,9 @@ span{
     background-color: lightyellow;
     text-decoration: underline;
 }
+
+img{
+    display: inline;
+    height: 200px;
+    width: 200px;
+}

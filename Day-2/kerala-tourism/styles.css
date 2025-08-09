@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 main{
     background-image: url('img/hero-bg.png');
     height: 100vh;
@@ -22,15 +26,28 @@ nav{
     list-style: none;
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .nav-links a{
     text-decoration: none;
-    color: inherit;
+    color: white;
+    font-size:16px
 }
 
 .navbar-links{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+}
+
+.nav-button{
+    border: 2px solid green;
+    padding: 10px;
+    background-color: transparent;
+    color: green;
+    transition: background-color 0.5s ease;
+}
+
+.nav-button:hover{
+    background-color: green;
 }

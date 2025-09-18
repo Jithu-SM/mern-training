@@ -23,11 +23,11 @@
                 </div>
                 <div class="flex items-center gap-8">
                     <ul class="flex flex-row gap-8 text-lg">
-                        <li><a href="#" class="text-black hover:underline">About</a></li>
-                        <li><a href="#" class="text-black hover:underline">Speakers</a></li>
-                        <li><a href="#" class="text-black hover:underline">Schedule</a></li>
+                        <li><a href="#about" class="text-black hover:underline">About</a></li>
+                        <li><a href="#highlights" class="text-black hover:underline">Speakers</a></li>
+                        <li><a href="#schedule" class="text-black hover:underline">Schedule</a></li>
                     </ul>
-                    <button class="ml-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-purple-800 font-semibold">Register</button>
+                    <a href="#reserve" class="ml-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-purple-800 font-semibold">Register</a>
                 </div>
             </nav>
             <!-- mobile navbar -->
@@ -56,27 +56,31 @@
         <section class="bg-gradient-to-r from-indigo-900 to-pink-500 min-h-screen pt-24">
             <div id="mobile-menu" class="md:hidden hidden bg-white px-4 py-2 rounded shadow-lg absolute top-16 left-0 right-0 z-10">
                 <ul class="flex flex-col gap-4 text-lg">
-                    <li><a href="#" class="text-black hover:underline">About</a></li>
-                    <li><a href="#" class="text-black hover:underline">Speakers</a></li>
-                    <li><a href="#" class="text-black hover:underline">Schedule</a></li>
+                    <li><a href="#about" class="text-black hover:underline" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#highlights" class="text-black hover:underline" onclick="toggleMenu()">Speakers</a></li>
+                    <li><a href="#schedule" class="text-black hover:underline" onclick="toggleMenu()">Schedule</a></li>
                 </ul>
-                <button class="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-purple-800 font-semibold">Register</button>
+                <a href="#reserve" class="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-purple-800 font-semibold block text-center" onclick="toggleMenu()">Register</a>
             </div>
-            <div class="flex flex-col ">
+
+            <div class="flex flex-col p-10">
                 <h1 class="text-white text-6xl font-bold text-center mt-12 m-5">Ignite Your Creativity at<br>Inspire 2025</h1>
                 <p class="text-white text-center mt-4 text-lg p-10">Join visionaries and innovators for a two-day celebration of ideas, tech, and art.</p>
-                <button class="mx-auto mt-8 px-6 py-3 bg-white text-purple-700 font-semibold rounded-full border-2 border-purple-700 shadow-lg hover:bg-purple-700 hover:text-white transition duration-200">
+                <button 
+                    class="mx-auto mt-8 px-6 py-3 bg-white text-purple-700 font-semibold rounded-full border-2 border-purple-700 shadow-lg hover:bg-purple-700 hover:text-white transition duration-200"
+                    onclick="location.href='#reserve'"
+                >
                     Reserve Your Seat
                 </button>
             </div>
         </section>
 
-        <section class="bg-gray-900 pt-24 pb-12 px-4 text-center text-white">
+        <section id="about" class="bg-gray-900 pt-24 pb-24 px-4 text-center text-white">
             <h2 class="text-3xl font-bold p-5">About This Event</h2>
             <p class="text-white text-center mt-5 text-lg p-10">Inspire 2025 is a premier conference bringing together creators, developers, and entrepreneurs to explore cutting-edge ideas <br>and transformative technologies.</p>
         </section>
 
-        <section class="bg-gray-800 pt-24 pb-12 px-4 text-center text-white">
+        <section id="highlights" class="bg-gray-800 pt-24 pb-24 px-4 text-center text-white">
             <h2 class="text-3xl font-bold p-5">Event Highlights</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-8">
                 <div class="bg-gray-500 text-white rounded-lg shadow-lg p-8 flex flex-col items-center">
@@ -95,6 +99,49 @@
                     <p>Connect with peers and potential collaborators.</p>
                 </div>
             </div>
+        </section>
+
+        <section id="schedule" class="bg-gray-900 pt-24 pb-24 px-4 text-white">
+            <h2 class="text-3xl font-bold p-5 text-center">Event Schedule</h2>
+            <div class="flex flex-col gap-8 mx-auto p-10">
+                <div class="bg-gray-500 rounded-lg shadow-lg p-8">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Day 1 - Vision & Innovation</h3>
+                        <span class="text-purple-300 font-bold text-right">10:00 AM - 5:00 PM</span>
+                    </div>
+                    <p class="mt-2">Keynotes and product showcases.</p>
+                </div>
+
+                <div class="bg-gray-500 rounded-lg shadow-lg p-8 mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Day 2 - Workshop & Networking</h3>
+                        <span class="text-purple-300 font-bold text-right">10:00 AM - 4:00 PM</span>
+                    </div>
+                    <p class="mt-2">Interactive sessions and meetups.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reserve" class="bg-indigo-900 pt-24 pb-24 px-4 text-center text-white">
+            <h2 class="text-3xl font-bold p-5">Reserve Your Spot</h2>
+            <form class="max-w-md mx-auto mt-8 flex flex-col gap-4">
+                <input 
+                    type="text" 
+                    placeholder="Name" 
+                    class="bg-white text-gray-800 px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-purple-600 w-full"
+                >
+                <input 
+                    type="email" 
+                    placeholder="Email" 
+                    class="bg-white text-gray-800 px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-purple-600 w-full"
+                >
+                <button 
+                    type="submit" 
+                    class="px-4 py-2 bg-white text-gray-700 rounded hover:bg-gray-300 font-semibold w-full"
+                >
+                    Register Now
+                </button>
+            </form>
         </section>
     </main>
 </body>

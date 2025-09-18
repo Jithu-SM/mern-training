@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EventX</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <script>
+    <script>
         function toggleMenu() {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
@@ -54,7 +54,7 @@
         </header>
 
         <section class="bg-gradient-to-r from-indigo-900 to-pink-500 min-h-screen pt-24">
-            <div id="mobile-menu" class="md:hidden hidden bg-white px-4 py-2 rounded shadow-lg absolute top-16 left-0 right-0 z-10">
+            <div id="mobile-menu" class="md:hidden hidden bg-white px-4 py-2 rounded shadow-lg fixed top-16 left-0 right-0 z-30">
                 <ul class="flex flex-col gap-4 text-lg">
                     <li><a href="#about" class="text-black hover:underline" onclick="toggleMenu()">About</a></li>
                     <li><a href="#highlights" class="text-black hover:underline" onclick="toggleMenu()">Speakers</a></li>
@@ -63,11 +63,11 @@
                 <a href="#reserve" class="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-purple-800 font-semibold block text-center" onclick="toggleMenu()">Register</a>
             </div>
 
-            <div class="flex flex-col p-10">
-                <h1 class="text-white text-6xl font-bold text-center mt-12 m-5">Ignite Your Creativity at<br>Inspire 2025</h1>
-                <p class="text-white text-center mt-4 text-lg p-10">Join visionaries and innovators for a two-day celebration of ideas, tech, and art.</p>
+            <div class="flex flex-col p-4 sm:p-10">
+                <h1 class="text-white text-3xl sm:text-6xl font-bold text-center mt-12 m-5">Ignite Your Creativity at<br>Inspire 2025</h1>
+                <p class="text-white text-center mt-4 text-base sm:text-lg sm:p-10 p-2">Join visionaries and innovators for a two-day celebration of ideas, tech, and art.</p>
                 <button 
-                    class="mx-auto mt-8 px-6 py-3 bg-white text-purple-700 font-semibold rounded-full border-2 border-purple-700 shadow-lg hover:bg-purple-700 hover:text-white transition duration-200"
+                    class="mx-auto mt-8 px-6 py-3 bg-white text-purple-700 font-semibold rounded-full border-2 border-purple-700 shadow-lg hover:bg-purple-700 hover:text-white transition duration-200 w-full sm:w-auto"
                     onclick="location.href='#reserve'"
                 >
                     Reserve Your Seat
@@ -75,55 +75,55 @@
             </div>
         </section>
 
-        <section id="about" class="bg-gray-900 pt-24 pb-24 px-4 text-center text-white">
-            <h2 class="text-3xl font-bold p-5">About This Event</h2>
-            <p class="text-white text-center mt-5 text-lg p-10">Inspire 2025 is a premier conference bringing together creators, developers, and entrepreneurs to explore cutting-edge ideas <br>and transformative technologies.</p>
+        <section id="about" class="bg-gray-900 pt-24 pb-24 px-2 sm:px-4 text-center text-white">
+            <h2 class="text-2xl sm:text-3xl font-bold p-5">About This Event</h2>
+            <p class="text-white text-center mt-5 text-base sm:text-lg sm:p-10 p-2">Inspire 2025 is a premier conference bringing together creators, developers, and entrepreneurs to explore cutting-edge ideas <br class="hidden sm:block">and transformative technologies.</p>
         </section>
 
-        <section id="highlights" class="bg-gray-800 pt-24 pb-24 px-4 text-center text-white">
-            <h2 class="text-3xl font-bold p-5">Event Highlights</h2>
+        <section id="highlights" class="bg-gray-800 pt-24 pb-24 px-2 sm:px-4 text-center text-white">
+            <h2 class="text-2xl sm:text-3xl font-bold p-5">Event Highlights</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-8">
-                <div class="bg-gray-500 text-white rounded-lg shadow-lg p-8 flex flex-col items-center">
+                <div class="bg-gray-500 text-white rounded-lg shadow-lg p-6 sm:p-8 flex flex-col items-center">
                     <img src="../../img/msg.png" alt="" class="mb-4 h-10 invert">
-                    <h3 class="text-xl font-bold mb-2">Keynote Talks</h3>
-                    <p>Hear from industry leaders shaping tomorrow's world.</p>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">Keynote Talks</h3>
+                    <p class="text-sm sm:text-base">Hear from industry leaders shaping tomorrow's world.</p>
                 </div>
-                <div class="bg-gray-500 text-white rounded-lg shadow-lg p-8 flex flex-col items-center">
+                <div class="bg-gray-500 text-white rounded-lg shadow-lg p-6 sm:p-8 flex flex-col items-center">
                     <img src="../../img/msg.png" alt="" class="mb-4 h-10 invert">
-                    <h3 class="text-xl font-bold mb-2">Hands-on Workshops</h3>
-                    <p>Gain practical skills with expert-led sessions.</p>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">Hands-on Workshops</h3>
+                    <p class="text-sm sm:text-base">Gain practical skills with expert-led sessions.</p>
                 </div>
-                <div class="bg-gray-500 text-white rounded-lg shadow-lg p-8 flex flex-col items-center">
+                <div class="bg-gray-500 text-white rounded-lg shadow-lg p-6 sm:p-8 flex flex-col items-center">
                     <img src="../../img/msg.png" alt="" class="mb-4 h-10 invert">
-                    <h3 class="text-xl font-bold mb-2">Networking</h3>
-                    <p>Connect with peers and potential collaborators.</p>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">Networking</h3>
+                    <p class="text-sm sm:text-base">Connect with peers and potential collaborators.</p>
                 </div>
             </div>
         </section>
 
-        <section id="schedule" class="bg-gray-900 pt-24 pb-24 px-4 text-white">
-            <h2 class="text-3xl font-bold p-5 text-center">Event Schedule</h2>
-            <div class="flex flex-col gap-8 mx-auto p-10">
-                <div class="bg-gray-500 rounded-lg shadow-lg p-8">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="text-xl font-bold">Day 1 - Vision & Innovation</h3>
+        <section id="schedule" class="bg-gray-900 pt-24 pb-24 px-2 sm:px-4 text-white">
+            <h2 class="text-2xl sm:text-3xl font-bold p-5 text-center">Event Schedule</h2>
+            <div class="flex flex-col gap-8 mx-auto p-2 sm:p-10 max-w-xl">
+                <div class="bg-gray-500 rounded-lg shadow-lg p-6 sm:p-8">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2 gap-2">
+                        <h3 class="text-lg sm:text-xl font-bold">Day 1 - Vision & Innovation</h3>
                         <span class="text-purple-300 font-bold text-right">10:00 AM - 5:00 PM</span>
                     </div>
-                    <p class="mt-2">Keynotes and product showcases.</p>
+                    <p class="mt-2 text-sm sm:text-base">Keynotes and product showcases.</p>
                 </div>
 
-                <div class="bg-gray-500 rounded-lg shadow-lg p-8 mb-6">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="text-xl font-bold">Day 2 - Workshop & Networking</h3>
+                <div class="bg-gray-500 rounded-lg shadow-lg p-6 sm:p-8 mb-6">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2 gap-2">
+                        <h3 class="text-lg sm:text-xl font-bold">Day 2 - Workshop & Networking</h3>
                         <span class="text-purple-300 font-bold text-right">10:00 AM - 4:00 PM</span>
                     </div>
-                    <p class="mt-2">Interactive sessions and meetups.</p>
+                    <p class="mt-2 text-sm sm:text-base">Interactive sessions and meetups.</p>
                 </div>
             </div>
         </section>
 
-        <section id="reserve" class="bg-indigo-900 pt-24 pb-24 px-4 text-center text-white">
-            <h2 class="text-3xl font-bold p-5">Reserve Your Spot</h2>
+        <section id="reserve" class="bg-indigo-900 pt-24 pb-24 px-2 sm:px-4 text-center text-white">
+            <h2 class="text-2xl sm:text-3xl font-bold p-5">Reserve Your Spot</h2>
             <form class="max-w-md mx-auto mt-8 flex flex-col gap-4">
                 <input 
                     type="text" 

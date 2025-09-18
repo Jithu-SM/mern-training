@@ -12,59 +12,90 @@
         }
     </script>
 </head>
-<body class="bg-gradient-to-r from-purple-900 to-pink-500 min-h-screen flex flex-col">
+<body class="flex flex-col">
     <main>
-        <!-- desktop navbar -->
-        <nav class="hidden md:flex flex-row justify-between items-center p-4 bg-white">
-            <div class="flex items-center">
-                <img src="" alt="" class="mr-2">
-                <p class="text-purple-700 font-bold text-2xl border-1">EventX</p>
-            </div>
-            <div class="flex items-center gap-8">
-                <ul class="flex flex-row gap-8 text-lg">
+        <header class="fixed top-0 left-0 w-full z-20">
+            <!-- desktop navbar -->
+            <nav class="hidden md:flex flex-row justify-between items-center p-4 bg-white">
+                <div class="flex items-center">
+                    <img src="" alt="" class="mr-2">
+                    <p class="text-purple-700 font-bold text-2xl border-1">EventX</p>
+                </div>
+                <div class="flex items-center gap-8">
+                    <ul class="flex flex-row gap-8 text-lg">
+                        <li><a href="#" class="text-black hover:underline">About</a></li>
+                        <li><a href="#" class="text-black hover:underline">Speakers</a></li>
+                        <li><a href="#" class="text-black hover:underline">Schedule</a></li>
+                    </ul>
+                    <button class="ml-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-purple-800 font-semibold">Register</button>
+                </div>
+            </nav>
+            <!-- mobile navbar -->
+            <nav class="md:hidden flex flex-row justify-between items-center p-4 bg-white">
+                <div class="flex items-center">
+                    <img src="" alt="" class="mr-2">
+                    <p class="text-purple-700 font-bold text-2xl border-1">EventX</p>
+                </div>
+                <button class="focus:outline-none" onclick="toggleMenu()" title="Open menu">
+                    <svg
+                        class="w-8 h-8 text-purple-700" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24">
+                        <path 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"
+                        />
+                    </svg>
+                </button>
+            </nav>
+        </header>
+
+        <section class="bg-gradient-to-r from-indigo-900 to-pink-500 min-h-screen pt-24">
+            <div id="mobile-menu" class="md:hidden hidden bg-white px-4 py-2 rounded shadow-lg absolute top-16 left-0 right-0 z-10">
+                <ul class="flex flex-col gap-4 text-lg">
                     <li><a href="#" class="text-black hover:underline">About</a></li>
                     <li><a href="#" class="text-black hover:underline">Speakers</a></li>
                     <li><a href="#" class="text-black hover:underline">Schedule</a></li>
                 </ul>
-                <button class="ml-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-purple-800 font-semibold">Register</button>
+                <button class="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-purple-800 font-semibold">Register</button>
             </div>
-        </nav>
-        <!-- mobile navbar -->
-        <nav class="md:hidden flex flex-row justify-between items-center p-4 bg-white">
-            <div class="flex items-center">
-                <img src="" alt="" class="mr-2">
-                <p class="text-purple-700 font-bold text-2xl border-1">EventX</p>
+            <div class="flex flex-col ">
+                <h1 class="text-white text-6xl font-bold text-center mt-12 m-5">Ignite Your Creativity at<br>Inspire 2025</h1>
+                <p class="text-white text-center mt-4 text-lg p-10">Join visionaries and innovators for a two-day celebration of ideas, tech, and art.</p>
+                <button class="mx-auto mt-8 px-6 py-3 bg-white text-purple-700 font-semibold rounded-full border-2 border-purple-700 shadow-lg hover:bg-purple-700 hover:text-white transition duration-200">
+                    Reserve Your Seat
+                </button>
             </div>
-            <button class="focus:outline-none" onclick="toggleMenu()" title="Open menu">
-                <svg
-                    class="w-8 h-8 text-purple-700" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24">
-                    <path 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round" 
-                        stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"
-                    />
-                </svg>
-            </button>
-        </nav>
-        <div id="mobile-menu" class="md:hidden hidden bg-white px-4 py-2 rounded shadow-lg absolute top-16 left-0 right-0 z-10">
-            <ul class="flex flex-col gap-4 text-lg">
-                <li><a href="#" class="text-black hover:underline">About</a></li>
-                <li><a href="#" class="text-black hover:underline">Speakers</a></li>
-                <li><a href="#" class="text-black hover:underline">Schedule</a></li>
-            </ul>
-            <button class="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-purple-800 font-semibold">Register</button>
-        </div>
-        <div class="flex flex-col">
-            <h1 class="text-white text-6xl font-bold text-center mt-12">Ignite Your Creativity at<br>Inspire 2025</h1>
-            <p class="text-white text-center mt-4 text-lg">Join visionaries and innovators for a two-day celebration of ideas, tech, and art.</p>
-            <button class="mx-auto mt-8 px-6 py-3 bg-white text-purple-700 font-semibold rounded-full border-2 border-purple-700 shadow-lg hover:bg-purple-700 hover:text-white transition duration-200">
-                Reserve Your Seat
-            </button>
-        </div>
+        </section>
+
+        <section class="bg-gray-900 pt-24 pb-12 px-4 text-center text-white">
+            <h2 class="text-3xl font-bold p-5">About This Event</h2>
+            <p class="text-white text-center mt-5 text-lg p-10">Inspire 2025 is a premier conference bringing together creators, developers, and entrepreneurs to explore cutting-edge ideas <br>and transformative technologies.</p>
+        </section>
+
+        <section class="bg-gray-800 pt-24 pb-12 px-4 text-center text-white">
+            <h2 class="text-3xl font-bold p-5">Event Highlights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-8">
+                <div class="bg-gray-500 text-white rounded-lg shadow-lg p-8 flex flex-col items-center">
+                    <img src="../../img/msg.png" alt="" class="mb-4 h-10 invert">
+                    <h3 class="text-xl font-bold mb-2">Keynote Talks</h3>
+                    <p>Hear from industry leaders shaping tomorrow's world.</p>
+                </div>
+                <div class="bg-gray-500 text-white rounded-lg shadow-lg p-8 flex flex-col items-center">
+                    <img src="../../img/msg.png" alt="" class="mb-4 h-10 invert">
+                    <h3 class="text-xl font-bold mb-2">Hands-on Workshops</h3>
+                    <p>Gain practical skills with expert-led sessions.</p>
+                </div>
+                <div class="bg-gray-500 text-white rounded-lg shadow-lg p-8 flex flex-col items-center">
+                    <img src="../../img/msg.png" alt="" class="mb-4 h-10 invert">
+                    <h3 class="text-xl font-bold mb-2">Networking</h3>
+                    <p>Connect with peers and potential collaborators.</p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

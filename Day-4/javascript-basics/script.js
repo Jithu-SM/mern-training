@@ -210,3 +210,45 @@ for(let i=0; i<colors.length; i++) {
 for (let color of colors) {
     console.log(color);
 }
+
+//functions
+function sayHello() {       //function declaration
+    console.log("Hello!")
+}
+
+sayHello()                  //function call
+
+function greet(name = "user") {   //function with parameter and default value
+    console.log("Hello, " + name)
+}
+
+greet("Jithu")          //function call with argument
+greet()                 //function call without argument
+
+//function with return value
+function add(a, b) { 
+    return a + b        //return statement
+}
+
+console.log(add(5, 15)) //function call within console.log
+
+let sum = add(10, 20)   //function call with arguments
+console.log(sum)
+
+
+//function expression
+const multiply = function(x, y) {
+    return x * y
+}
+
+console.log(multiply(5, 4)) 
+
+//arrow function
+const subtract = (x, y) => {
+    console.log(x - y)
+}
+subtract(10, 4)
+
+//arrow function with return value
+const square = (x) => x * x
+console.log(square(20))

@@ -1,5 +1,5 @@
 console.log("Hello World")
-document.write("Hello World")
+// document.write("Hello World")
 
 //var
 var x = "jithu"  //function scoped
@@ -27,3 +27,45 @@ const person = {
     age: 21,
     city: "Kottayam"
 }
+console.log(person)
+console.log(typeof(person))  //data type
+console.log(person.name)  //dot notation
+
+person.name = "Anshul"
+console.log(person.name)
+
+//hoisting
+//var - allows hoisting and initializes with undefined
+console.log(a)  //undefined
+var a = 10
+console.log(a)
+
+//let and const - does not allow hoisting
+// console.log(b)  //ReferenceError: Cannot access 'b' before initialization
+let b = 20
+console.log(b)
+
+//opertors
+let m = 10
+let n = 3
+console.log(m+n)  //addition
+console.log(m-n)  //subtraction
+console.log(m*n)  //multiplication
+console.log(m/n)  //division
+console.log(m%n)  //modulus
+console.log(m**n)  //exponentiation
+m++  //increment
+console.log(m)
+n--  //decrement
+console.log(n)
+
+//assignment operators
+let p = 10
+p += 5  //p = p + 5
+console.log(p)
+p -= 3  //p = p - 3 
+console.log(p)
+p *= 2  //p = p * 2
+console.log(p)
+p /= 4  //p = p / 4
+console.log(p)

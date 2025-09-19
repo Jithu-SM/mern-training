@@ -168,3 +168,17 @@ switch(day) {
     default:
         console.log("Invalid day")
 }
+
+
+//for loop
+for(let i=0; i<5; i++) {
+    console.log(i)
+}
+
+//while loop
+j = 0;
+while(j < 5) {
+    console.log(j);
+    j++;
+}
+

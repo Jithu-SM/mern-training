@@ -176,9 +176,37 @@ for(let i=0; i<5; i++) {
 }
 
 //while loop
-j = 0;
+let j = 0;
 while(j < 5) {
     console.log(j);
     j++;
 }
 
+//do while loop
+let k = 0;
+do {
+    console.log(k);
+    k++;
+} while(k < 5);
+
+// for..in loop
+const person1 = {
+    name: "Alice",
+    age: 30,
+    city: "New York"
+}
+
+for (let key in person1) {
+    console.log(key + ": " + person1[key]);
+}
+
+// for..of loop
+const colors = ["Red", "Green", "Blue"];
+
+for(let i=0; i<colors.length; i++) {
+    console.log(colors[i]);
+}
+
+for (let color of colors) {
+    console.log(color);
+}

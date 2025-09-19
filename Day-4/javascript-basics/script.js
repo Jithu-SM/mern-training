@@ -45,6 +45,11 @@ console.log(a)
 let b = 20
 console.log(b)
 
+//boolean
+let isRaining = true
+console.log(isRaining)
+console.log(typeof(isRaining))  //data type
+
 //opertors
 let m = 10
 let n = 3
@@ -69,3 +74,15 @@ p *= 2  //p = p * 2
 console.log(p)
 p /= 4  //p = p / 4
 console.log(p)
+
+//comparison operators
+let q = 10
+let r = '10'
+console.log(q == r)  //true
+console.log(q === r)  //false
+console.log(q != r)  //false
+console.log(q !== r)  //true
+console.log(q > r)  //false
+console.log(q < r)  //false
+console.log(q >= r)  //true
+console.log(q <= r)  //true

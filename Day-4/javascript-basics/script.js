@@ -107,7 +107,34 @@ console.log(greeting)
 
 //ternary or conditional operator
 let age = 18
-let canVote = (age >= 18) ? "Yes, can vote" : "No, cannot vote"
+let canVote = age >= 18 ? "Yes, can vote" : "No, cannot vote"
 console.log(canVote)
 
 
+//array
+let arr1 = [10, 20, 30, 40, 50]  //array of numbers
+console.log(arr1)
+
+
+//conditional statements
+// if student age is greater than or equal to 18, print "You are an adult"
+
+if(age >= 18) {
+    console.log("You are an adult")
+} else {
+    console.log("You are a minor")
+}
+
+
+// Grade calculator
+let score = 85
+
+if(score >= 90) {
+    console.log("Grade A")
+} else if(score >= 75) {
+    console.log("Grade B")
+} else if(score >= 50) {
+    console.log("Grade C")
+} else {
+    console.log("Failed")
+}

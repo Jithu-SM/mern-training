@@ -83,6 +83,31 @@ console.log(q === r)  //false
 console.log(q != r)  //false
 console.log(q !== r)  //true
 console.log(q > r)  //false
-console.log(q < r)  //false
-console.log(q >= r)  //true
 console.log(q <= r)  //true
+
+//logical operators
+let isAdult = true
+let hasTicket = false
+
+// AND - && 
+// OR - ||
+// NOT - !
+
+console.log(isAdult && hasTicket)  //false  
+console.log(isAdult || hasTicket)  //true
+console.log(!hasTicket)  //true
+
+
+//string operator
+let greeting = "Hello, " + "World!"
+console.log(greeting)
+greeting += " Welcome to JavaScript."
+console.log(greeting)
+
+
+//ternary or conditional operator
+let age = 18
+let canVote = (age >= 18) ? "Yes, can vote" : "No, cannot vote"
+console.log(canVote)
+
+

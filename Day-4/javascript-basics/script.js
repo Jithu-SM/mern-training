@@ -126,7 +126,7 @@ if(age >= 18) {
 }
 
 
-// Grade calculator
+// Grade calculator (>=90 A, 75-89 B, 50-74 C, <50 Failed)
 let score = 85
 
 if(score >= 90) {
@@ -137,4 +137,34 @@ if(score >= 90) {
     console.log("Grade C")
 } else {
     console.log("Failed")
+}
+
+//switch case
+//print day of the week based on number (1-7)
+
+let day = 3
+switch(day) {
+    case 1:
+        console.log("Sunday")
+        break
+    case 2:
+        console.log("Monday")
+        break
+    case 3:
+        console.log("Tuesday")
+        break
+    case 4:
+        console.log("Wednesday")
+        break
+    case 5:
+        console.log("Thursday")
+        break
+    case 6:
+        console.log("Friday")
+        break
+    case 7:
+        console.log("Saturday")
+        break
+    default:
+        console.log("Invalid day")
 }

@@ -99,6 +99,54 @@ console.log(nums)
 
 //slice - returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included)
 const letters = ['a', 'b', 'c', 'd', 'e', 'f']
-const someLetters = letters.slice(2, 5)
+const someLetters = letters.slice(2, 5)    //from index 2 to index 4 - ['c', 'd', 'e']
 console.log(someLetters)
+
+//splice - changes the contents of an array by removing or replacing existing elements and/or adding new elements in place
+letters.splice(2, 3, 'x', 'y', 'z')   //from index 2, remove 3 elements and add 'x', 'y', 'z'
+console.log(letters)
+
+let animals = ['cat', 'dog', 'elephant', 'tiger', 'lion']
+animals.splice(1, 0, 'monkey', 'giraffe') //from index 1, remove 0 elements and add 'monkey', 'giraffe'
+console.log(animals)
+
+    
+//array destructuring
+//pulling out values from an array and assigning them to variables
+animals = ['cat', 'rabbit']
+const [first, second] = animals
+console.log(first)
+console.log(second)
+
+
+//array in object
+const book = {
+    title: "JS Guide",
+    authors: ["Alice", "Rick"],
+}
+
+console.log(book.authors[0])     //Alice
+
+
+//object destructuring
+//pulling out values from an object and assigning them to variables
+const student = {
+    name: "Marc",
+    grade: "A"
+}
+const {name, grade} = student       //keys should match
+console.log(name)        //Marc
+console.log(grade)      //A
+
+//JSON - JavaScript Object Notation
+const person = {
+    name: "Alice",
+    age: 30,
+}
+const jsonString = JSON.stringify(person)   //js object to JSON string
+console.log(person)                         //{ name: 'Alice', age: 30 }
+console.log(jsonString)                     //{"name":"Alice","age":30}
+
+const jsObject = JSON.parse(jsonString)     //JSON string to js object
+console.log(jsObject)                       //{ name: 'Alice', age: 30 }
 

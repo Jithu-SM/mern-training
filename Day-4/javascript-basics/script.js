@@ -249,6 +249,18 @@ const subtract = (x, y) => {
 }
 subtract(10, 4)
 
-//arrow function with return value
-const square = (x) => x * x
+
+const square = x=> x ** 2
+
 console.log(square(20))
+
+//function scope
+var msg2 = "Hi"
+function show() {
+    let msg1 = "Hello"
+    console.log(msg1)
+    console.log(msg2)
+}
+show()
+// console.log(msg1)  //ReferenceError: msg1 is not defined
+console.log(msg2)

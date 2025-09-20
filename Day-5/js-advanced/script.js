@@ -71,3 +71,13 @@ if (scores.some(score => score < 40)) {
 } else {
     console.log("All students passed")
 }
+
+//sum
+
+const prices = [100, 200, 300, 589, 7654, 3765]
+let total = 0
+prices.forEach(price => total += price)
+console.log(total)
+
+const total1 = prices.reduce((sum, price) => sum + price, 0)
+console.log(total1)

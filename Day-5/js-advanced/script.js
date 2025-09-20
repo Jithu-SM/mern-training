@@ -149,4 +149,3 @@ console.log(jsonString)                     //{"name":"Alice","age":30}
 
 const jsObject = JSON.parse(jsonString)     //JSON string to js object
 console.log(jsObject)                       //{ name: 'Alice', age: 30 }
-

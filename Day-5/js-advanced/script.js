@@ -74,10 +74,31 @@ if (scores.some(score => score < 40)) {
 
 //sum
 
-const prices = [100, 200, 300, 589, 7654, 3765]
+const prices = [100, 200, 300, 589, 7.654, 3.765]
 let total = 0
 prices.forEach(price => total += price)
 console.log(total)
 
+
+//reduce - executes a reducer function on each element of the array, resulting in a single output value
+//syntax: array.reduce((accumulator, currentValue) => { ... }, initialValue)
 const total1 = prices.reduce((sum, price) => sum + price, 0)
 console.log(total1)
+
+console.log(total1.toFixed(2))        //toFixed - formats a number using fixed-point notation
+
+
+//sort - sorts the elements of an array in place and returns the sorted array
+
+const nums= [5, 3, 8, 11, 4]
+nums.sort()
+console.log(nums)       
+
+nums.sort((a, b) => a - b)
+console.log(nums)
+
+//slice - returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included)
+const letters = ['a', 'b', 'c', 'd', 'e', 'f']
+const someLetters = letters.slice(2, 5)
+console.log(someLetters)
+

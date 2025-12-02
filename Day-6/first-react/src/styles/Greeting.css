@@ -1,0 +1,13 @@
+.para1{
+  font-size:5px;
+  color: red;
+}
+
+.head2{
+    color:blue;
+}
+
+.greet{
+  display: flex;
+  flex-direction: column;
+}

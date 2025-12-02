@@ -1,0 +1,57 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profilePic {
+    width: 400px;                   
+    height: 400px;              
+    border-radius: 50%;
+    border-radius: 50%;
+    padding: 5px;      
+    background: linear-gradient(45deg, 
+        red, orange, yellow, green, cyan, blue, purple, red);
+    background-size: 400% 400%;
+    animation: rgbGlow 5s linear infinite;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+@keyframes rgbGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.name{
+    color:aqua;
+    font-size: 50px;
+}
+
+.phone{
+    color:aquamarine;
+    font-size: 30px;
+}
+
+.email{
+    color:antiquewhite;
+    font-size: 30px;
+}
+
+.profile-card{
+    display: flex;
+    gap: 20px;
+    background-color: rgb(20, 14, 14);
+}

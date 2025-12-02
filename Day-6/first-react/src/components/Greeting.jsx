@@ -19,8 +19,8 @@ function Greeting({text}){
         <div className='greet'>
             <h2 className="head2">Good {greet} {text}! </h2>
             {/* <img src="cat.jpeg" alt="Cat" /> */}
-            <img src={catImg} width="200px" alt="Cat" />
-            <img src={sunImg} width="200px" alt="Sun" />
+            <img src={catImg} className='img' alt="Cat" />
+            <img src={sunImg} className='img' alt="Sun" />
 
         </div>
     )

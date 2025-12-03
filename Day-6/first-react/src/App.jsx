@@ -3,6 +3,7 @@ import Profile from './components/Profile.jsx'
 import ProfileList from './components/ProfileList.jsx'
 import Tasks from './components/Tasks.jsx'
 import Events from './components/Events.jsx'
+import Counter from './components/Counter.jsx'
 
 function App(){
 
@@ -29,6 +30,7 @@ function App(){
 
   return(
     <>
+      <Counter size={3}/>
       <Events />
       <Tasks />
       <ProfileList />

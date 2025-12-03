@@ -1,6 +1,8 @@
 import Greeting from './components/Greeting.jsx'
 import Profile from './components/Profile.jsx'
 import ProfileList from './components/ProfileList.jsx'
+import Tasks from './components/Tasks.jsx'
+import Events from './components/Events.jsx'
 
 function App(){
 
@@ -27,6 +29,8 @@ function App(){
 
   return(
     <>
+      <Events />
+      <Tasks />
       <ProfileList />
       {/* <Profile person={person1}/>
       <Profile person={person2}/>

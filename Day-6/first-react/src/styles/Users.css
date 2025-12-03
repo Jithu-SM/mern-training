@@ -1,0 +1,35 @@
+.main{
+    max-width: 800px;
+    margin: 24px auto;
+    padding: 20px;
+    background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(20,30,50,0.08);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.ul1{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.li1{
+    background: #fff;
+    border: 1px solid #e6e9ef;
+    padding: 12px 14px;
+    border-radius: 6px;
+    color: #102a43;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(16,42,67,0.04);
+    transition: transform 120ms ease, box-shadow 120ms ease;
+    cursor: default;
+}
+
+.li1:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(16,42,67,0.08);
+}

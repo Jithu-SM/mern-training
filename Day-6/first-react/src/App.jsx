@@ -4,6 +4,7 @@ import ProfileList from './components/ProfileList.jsx'
 import Tasks from './components/Tasks.jsx'
 import Events from './components/Events.jsx'
 import Counter from './components/Counter.jsx'
+import Users from './components/Users.jsx'
 
 function App(){
 
@@ -30,6 +31,10 @@ function App(){
 
   return(
     <>
+      <h1 class="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+      <Users />
       <Counter size={3}/>
       <Events />
       <Tasks />

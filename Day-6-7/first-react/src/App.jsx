@@ -5,6 +5,9 @@ import Tasks from './components/Tasks.jsx'
 import Events from './components/Events.jsx'
 import Counter from './components/Counter.jsx'
 import Users from './components/Users.jsx'
+import SimpleForm from './components/SimpleForm.jsx'
+import MultiFieldForm from './components/MultiFieldForm.jsx'
+import Task2 from './components/Task2.jsx'
 
 function App(){
 
@@ -31,6 +34,9 @@ function App(){
 
   return(
     <>
+      <Task2 />
+      <MultiFieldForm />
+      <SimpleForm />
       <h1 class="text-3xl font-bold underline">
         Hello world!
       </h1>

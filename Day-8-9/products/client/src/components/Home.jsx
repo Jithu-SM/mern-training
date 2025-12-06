@@ -69,7 +69,7 @@ const Home = () => {
             )}
           </div>
 
-          <div className="rounded-lg overflow-hidden bg-gradient-to-tr from-pink-50 to-indigo-50 p-6 shadow-md">
+          <div className="rounded-lg overflow-hidden bg-linear-to-tr from-pink-50 to-indigo-50 p-6 shadow-md">
             <div className="h-64 bg-white rounded-lg flex items-center justify-center border border-dashed border-gray-200">
               <div className="text-center px-6">
                 <p className="text-sm text-gray-500">Preview</p>

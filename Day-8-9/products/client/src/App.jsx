@@ -12,7 +12,7 @@ const App = () => {
         <div className='max-w-7xl mx-auto px-4 sm:px-6'>
           <ul className='flex py-4 gap-6'>
             <li>
-              <div className="w-15 h-10 rounded-md bg-gradient-to-br from-indigo-600 to-pink-500 flex items-center justify-center text-white font-bold">
+              <div className="w-15 h-10 rounded-md bg-linear-to-br from-indigo-600 to-pink-500 flex items-center justify-center text-white font-bold">
                 shoop
               </div>
             </li>

@@ -24,7 +24,7 @@ main()
 
 app.get('/', (req, res) => {
   try {
-    res.status(200).json({"Status": "HelloWorld2222"})
+    res.status(200).json({"Status": "Welcome welcome"})
 
   } catch (error) {
     res.status(404).json({error:error.message})

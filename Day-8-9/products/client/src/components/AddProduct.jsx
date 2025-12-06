@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { API_ENDPOINTS } from '../config/api'
 
 const AddProduct = () => {
     const navigate = useNavigate()
@@ -30,7 +31,7 @@ const AddProduct = () => {
 
     setLoading(true)
     try {
-      const response = await fetch('http://localhost:3000/products/', {
+      const response = await fetch(API_ENDPOINTS.PRODUCTS, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Product from './Product'
+import { API_ENDPOINTS } from '../config/api'
 
 const Products = ({ onNotify }) => {
   const [products, setProducts] = useState([])
@@ -10,7 +11,7 @@ const Products = ({ onNotify }) => {
     const fetchProducts = async () => {
       try {
         setLoading(true)
-        const response = await fetch('http://localhost:3000/products')
+        const response = await fetch(API_ENDPOINTS.PRODUCTS)
         
         if (!response.ok) {
           throw new Error('Failed to fetch products')

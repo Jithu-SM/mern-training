@@ -3,13 +3,19 @@ import Home from './components/Home'
 import Products from './components/Products'
 import AddProduct from './components/AddProduct'
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom'
+// import Header from './components/Header.jsx'
 
 const App = () => {
   return (
     <Router>
-      <nav className='bg-gray-800 shadow-lg'>
+      <nav className='bg-gray-800 shadow-lg fixed w-full z-10 top-0'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6'>
           <ul className='flex py-4 gap-6'>
+            <li>
+              <div className="w-15 h-10 rounded-md bg-gradient-to-br from-indigo-600 to-pink-500 flex items-center justify-center text-white font-bold">
+                shoop
+              </div>
+            </li>
             <li>
               <Link 
                 to='/'
@@ -29,7 +35,9 @@ const App = () => {
               >Add Product</Link>
             </li>
           </ul>
+          
         </div>
+        {/* <Header /> */}
       </nav>
 
       <Routes>

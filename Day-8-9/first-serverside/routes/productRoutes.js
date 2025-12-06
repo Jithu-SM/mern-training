@@ -29,7 +29,7 @@ router.get('/:id',(req,res)=>{
     }
 })
 
-//Update prosuct by id
+//Update product by id
 
 //localhost://3000/products/{id} -PATCH
 
@@ -57,6 +57,50 @@ router.patch('/:id',(req,res)=>{
 
         res.status(200).json({product:product})
         //res.end()
+    } catch(error){
+        res.status(404).json({error:error.message})
+    }
+})
+
+//Delete product by id
+
+//localhost://3000/products/{id} -DELETE
+
+router.delete('/:id',(req,res)=>{
+    try{
+        const productID = parseInt(req.params.id)
+        // console.log(productID)
+        const product = productList.findIndex(prod=>prod.id===productID)
+        // console.log(product)
+        if(product===-1){
+            return res.status(404).json({error:"Product is not available"})
+        }
+        productList.splice(product, 1)
+        res.status(200).json({message:"Product deleted successfully"})
+    } catch(error){
+        res.status(404).json({error:error.message})
+    }
+})
+
+
+//Add new product
+
+//localhost://3000/products/ -POST
+
+router.post('/',(req,res)=>{
+    try{
+        const newProduct = req.body
+        // console.log(productID)
+        if(!newProductBody){
+            return res.status(404).json({error:"Not a valid product"})
+        }
+        newProduct = {
+            id:(productList.length)?productList[productList.length-1].id+1:0,
+            ...newProductBody
+        }
+
+        productList.push(newProduct)
+        res.status(200).json({message:"Product added successfully"})
     } catch(error){
         res.status(404).json({error:error.message})
     }
